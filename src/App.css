@@ -1,4 +1,50 @@
-.App {
+
+.left-header {
+  text-align: left;
+  float: left;
+  width: 47%;
+  padding: 15px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid lightgrey;
+}
+
+.right-header {
+  text-align: right;
+  float: right;
+  width: 46%;
+  padding: 15px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid lightgrey;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+.memes-container {
+  height: 550px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.meme-item {
+  /* background-color: tomato; */
+  border: 1px solid lightgrey;
+}
+
+.meme-img {
+  height: 100px;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +81,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
