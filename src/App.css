@@ -24,21 +24,25 @@
 /* ///////////////////////////////////////////////////////// */
 
 .memes-container {
-  height: 550px;
+  height: 100vh;
   width: 100%;
   border: 2px solid black;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+
 }
 
 .meme-item {
-  /* background-color: tomato; */
   border: 1px solid lightgrey;
+  /* box-sizing: border-box; */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  margin: 3% 1%;
 }
 
 .meme-img {
-  height: 100px;
+  height: 200px;
 }
 
 

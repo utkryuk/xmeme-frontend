@@ -11,6 +11,14 @@ const getAll = () => {
     })
 }
 
+const getAMeme = (id) => {
+
+    const req = axios.get(`${baseUrl}/${id}`)
+
+    return req.then((response) => {
+        return response.data
+    })
+}
 
 const addMeme = (newMeme) => {
 
@@ -21,4 +29,4 @@ const addMeme = (newMeme) => {
     })
 }
 
-export default {getAll, addMeme};
+export default {getAll, getAMeme, addMeme};
