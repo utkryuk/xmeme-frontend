@@ -3,11 +3,11 @@ import Meme from './Meme'
 
 const Memes = ({memes}) => {
 
-    console.log(memes)
+    const printMemes = memes.reverse()
 
     return (
         <div className='memes-container'>
-            {memes.map((meme) => {
+            {printMemes.map((meme) => {
                 return <Meme key={meme.id} meme = {meme} />
             })}
         </div>
