@@ -16,9 +16,9 @@ const Main = () => {
     useEffect(memeHook, [])
 
     return (
-        <section>
+        <div className = 'main-class'>
             <Memes memes = {memes} />
-        </section>
+        </div>
     )
 }
 

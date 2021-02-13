@@ -1,32 +1,46 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .left-header {
-  text-align: left;
-  float: left;
-  width: 47%;
-  padding: 15px;
-  font-size: 1.5rem;
-  border-bottom: 2px solid lightgrey;
+  font-size: 2rem;
+  padding: 2.5vh;
+  /* background-color: tomato; */
+}
+
+.left-header-content {
+  color: darkseagreen;
 }
 
 .right-header {
-  text-align: right;
-  float: right;
-  width: 46%;
-  padding: 15px;
   font-size: 1.5rem;
-  border-bottom: 2px solid lightgrey;
+  padding: 3vh;
+  /* background-color: tomato; */
 }
 
 .header-link {
+  color: #4B5563;
+}
+
+.header-link:hover {
+  color: black;
   text-decoration: none;
 }
 
+
 /* ///////////////////////////////////////////////////////// */
+
+.main-class {
+  min-height: 100vh;
+  position: relative;
+}
 
 .memes-container {
   height: 100vh;
   width: 100%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
