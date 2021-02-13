@@ -2,10 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
 }
 
 .left-header {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 2.5vw;
   padding: 2.5vh;
   /* background-color: tomato; */
 }
@@ -15,7 +18,8 @@
 }
 
 .right-header {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: 1.8vw;
   padding: 3vh;
   /* background-color: tomato; */
 }
@@ -29,16 +33,41 @@
   text-decoration: none;
 }
 
+/* ///////////////////////////////////////////////////////// */
+/* add meme button*/
 
+
+/* ///////////////////////////////////////////////////////// */
+/* Form */
+
+.form-container {
+  background-color: pink;
+  padding: 4%;
+}
+
+
+input {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+label {
+  padding: 1% 0;
+}
+
+.add-btn {
+
+}
 /* ///////////////////////////////////////////////////////// */
 
 .main-class {
   min-height: 100vh;
-  position: relative;
+  /* position: relative; */
+  /* background-color: tomato; */
 }
 
 .memes-container {
-  height: 100vh;
   width: 100%;
   /* border: 2px solid black; */
   display: flex;
@@ -49,7 +78,7 @@
 }
 
 .meme-item {
-  border: 1px solid lightgrey;
+  /* border: 1px solid lightgrey; */
   /* box-sizing: border-box; */
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   margin: 3% 1%;
