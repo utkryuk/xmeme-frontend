@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://xmeme-utkarsh.herokuapp.com/memes'
+const baseUrl = 'https://xmeme-utkarsh.herokuapp.com/memes'
 
 const getAll = () => {
     
