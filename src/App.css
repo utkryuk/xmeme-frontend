@@ -7,8 +7,8 @@
 }
 
 .left-header {
-  /* font-size: 2rem; */
-  font-size: 2.5vw;
+  font-size: 2rem;
+  /* font-size: 2.5vw; */
   padding: 2.5vh;
   /* background-color: tomato; */
 }
@@ -18,8 +18,8 @@
 }
 
 .right-header {
-  /* font-size: 1.5rem; */
-  font-size: 1.8vw;
+  font-size: 1.5rem;
+  /* font-size: 1.8vw; */
   padding: 3vh;
   /* background-color: tomato; */
 }
@@ -36,14 +36,38 @@
 /* ///////////////////////////////////////////////////////// */
 /* add meme button*/
 
+.close-form-btn {
+  float: right;
+  padding: 2%;
+}
 
 /* ///////////////////////////////////////////////////////// */
 /* Form */
 
 .form-container {
-  background-color: pink;
-  padding: 4%;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
 }
+
+#meme-form {
+  flex: 0 0 100%;
+}
+
+/* #image-preview {
+  flex: 0 0 10%;
+  padding: 10% 5%;
+} */
+
+/* .img-prev-class {
+  /* height: 300px; */
+  /* height: 5%; */
+  /* width: 100%; */
+  /* width: 50%; */
+  /* height: auto; */
+  /* font-size: 100px; */
+/* }  */
 
 
 input {
@@ -61,7 +85,10 @@ label {
   border-style: none;
   border-radius: 10px;
   color: white;
+  outline: none;
 }
+
+
 /* ///////////////////////////////////////////////////////// */
 
 .main-class {

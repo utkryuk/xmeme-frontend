@@ -15,7 +15,9 @@ const AddMemeButton = ({memes, setMemes}) => {
     if (addMemeToggle) {
         return (
             <div>
-            <Button variant='danger' onClick={addMemeForm}>Close Form</Button>
+                <div className='close-form-btn'>
+                    <Button variant='danger' onClick={addMemeForm}>Close</Button>
+                </div>
             <AddMemeForm memes={memes} setMemes={setMemes}/>
             </div>
         )
@@ -24,7 +26,9 @@ const AddMemeButton = ({memes, setMemes}) => {
     else {
         return (
             <div>
-            <Button variant='success' onClick={addMemeForm}>Add Meme</Button>
+                <div className='close-form-btn'>
+                    <Button variant='success' onClick={addMemeForm}>Add Meme</Button>
+                </div>
             </div>
         )
     }

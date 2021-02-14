@@ -41,16 +41,23 @@ const AddMemeForm = ({memes, setMemes}) => {
 
     return (
         <div className = 'form-container'>
-            <h3>Add your meme</h3>
-            <form onSubmit={handleFormSubmit}>
-                <label htmlFor='meme-name'>Name</label>
-                <input name='meme-name' type='text' value={username} placeholder='Enter your full name' onChange={handleNameChange} autoFocus required></input>
-                <label htmlFor='meme-caption'>Caption</label>
-                <input name='meme-caption' type='text' value={caption} placeholder='Enter the meme caption' onChange={handleCaptionChange} required></input>
-                <label htmlFor='meme-name'>Meme URL</label>
-                <input name='meme-url' type='url' value={memeURL} placeholder='Enter the meme url' onChange={handleMemeURLChange} required></input>
-                <input type='submit' value='Add' className='add-btn'></input>
-            </form>
+            <div className = 'form-container-element' id='meme-form'>
+                <h3>Add your meme</h3>
+                <form onSubmit={handleFormSubmit}>
+                    <label htmlFor='meme-name'>Name</label>
+                    <input name='meme-name' type='text' value={username} placeholder='Enter your full name' onChange={handleNameChange} autoFocus required></input>
+                    <label htmlFor='meme-caption'>Caption</label>
+                    <input name='meme-caption' type='text' value={caption} placeholder='Enter your meme caption' onChange={handleCaptionChange} required></input>
+                    <label htmlFor='meme-name'>Meme URL</label>
+                    <input name='meme-url' type='url' value={memeURL} placeholder='Enter your meme url' onChange={handleMemeURLChange} required></input>
+                    <label htmlFor='submit-btn'></label>
+                    <input type='submit' value='Add' className='add-btn'></input>
+                </form>
+            </div>
+            {/* <div className = 'form-container-element' id='image-preview'>
+                <img src={memeURL} className='img-prev-class'/> */}
+            {/* </div> */}
+            
         </div>
     )
 }
