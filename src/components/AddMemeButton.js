@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Button} from 'react-bootstrap'
 import AddMemeForm from './AddMemeForm'
 
-const AddMemeButton = () => {
+const AddMemeButton = ({memes, setMemes}) => {
     
     const [addMemeToggle, setAddMemeToggle] = useState(false)
 
@@ -16,7 +16,7 @@ const AddMemeButton = () => {
         return (
             <div>
             <Button variant='danger' onClick={addMemeForm}>Close Form</Button>
-            <AddMemeForm />
+            <AddMemeForm memes={memes} setMemes={setMemes}/>
             </div>
         )
     }
@@ -24,7 +24,7 @@ const AddMemeButton = () => {
     else {
         return (
             <div>
-            <Button variant='danger' onClick={addMemeForm}>Add Meme</Button>
+            <Button variant='success' onClick={addMemeForm}>Add Meme</Button>
             </div>
         )
     }
